@@ -67,7 +67,7 @@ fill_desc_generic <- function(name, Title, Description = "Here", repo,
   my_desc <- description$new("!new")
   my_desc$set("Package", name)
   my_desc$set("Authors@R",
-              glue("person('{first_name}', '{last_name}', email = '{email}', role = {role}"))
+              glue("person('{first_name}', '{last_name}', email = '{email}', role = {role})"))
   my_desc$del("Maintainer")
   my_desc$set_version(version)
   my_desc$set(Title = Title)
